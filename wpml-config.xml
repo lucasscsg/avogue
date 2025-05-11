@@ -1,0 +1,335 @@
+<wpml-config>
+	<custom-types>
+        <custom-type translate="1">block</custom-type>
+        <custom-type translate="1">pls_size_chart</custom-type>
+    </custom-types>	
+    <taxonomies>
+        <taxonomy translate="1">product_brand</taxonomy>
+    </taxonomies>
+	<custom-fields>
+		<custom-field action="copy">_pls_post_format_quote</custom-field>
+		<custom-field action="copy">_pls_post_format_quote_author</custom-field>
+		<custom-field action="copy">_pls_post_format_quote_author_url</custom-field>
+		<custom-field action="copy">_pls_post_format_link_url</custom-field>
+		<custom-field action="copy">_pls_post_format_link_text</custom-field>
+		<custom-field action="copy">_pls_product_custom_tab_heading</custom-field>
+		<custom-field action="copy">_pls_product_custom_tab_content</custom-field>
+		<custom-field action="copy">_pls_product_video</custom-field>
+		<custom-field action="copy">_pls_custom_page_title</custom-field>
+		<custom-field action="copy">_pls_page_subtitle</custom-field>
+	</custom-fields>
+	<admin-texts>
+        <key name="pls_anvogue_options">
+            <key name="promo-bar-message-text" />
+            <key name="promo-bar-link-btn-text" />
+            <key name="mobile-navbar-label-shop" />
+            <key name="mobile-navbar-label-wishlist" />
+            <key name="mobile-navbar-label-cart" />
+            <key name="mobile-navbar-label-account" />
+            <key name="mobile-navbar-label-home" />
+            <key name="mobile-navbar-label-menu" />
+            <key name="mobile-navbar-label-compare" />
+            <key name="mobile-navbar-label-filter" />
+            <key name="mobile-navbar-label-order" />
+            <key name="mobile-navbar-label-order-tracking" />
+            <key name="mobile-navbar-label-sidebar" />
+            <key name="mobile-navbar-label-blog" />
+            <key name="mobile-navbar-label-search" />
+			<key name="mobile-navbar-custom-link1-label"/>
+			<key name="mobile-navbar-custom-link1-icon"/>
+			<key name="mobile-navbar-custom-link1-url"/>
+			<key name="mobile-navbar-custom-link2-label"/>
+			<key name="mobile-navbar-custom-link2-icon"/>
+			<key name="mobile-navbar-custom-link2-url"/>
+			<key name="mobile-navbar-custom-link3-label"/>
+			<key name="mobile-navbar-custom-link3-icon"/>
+			<key name="mobile-navbar-custom-link3-url"/>
+            <key name="header-phone-number" />
+            <key name="header-email" />
+            <key name="header-store-location" />
+            <key name="header-text-message" />
+            <key name="header-newsletter" />
+            <key name="categories-menu-title" />
+            <key name="search-placeholder-text" />
+			<key name="copyright-text"/>
+			<key name="sale-product-label-text"/>
+			<key name="new-product-label-text"/>
+			<key name="featured-product-label-text"/>
+			<key name="outofstock-product-label-text"/>
+			<key name="free-shipping-msg"/>
+			<key name="free-shipping-complete-msg"/>
+			<key name="cart-countdow-text"/>
+			<key name="cart-countdow-expired-text"/>
+			<key name="off-canvas-button-text"/>
+			<key name="products-pagination-load-more-button-text"/>
+			<key name="products-pagination-finished-message"/>
+			<key name="product-quickbuy-button-text"/>
+			<key name="single-product-availability-instock-msg"/>
+			<key name="single-product-availability-hurry-left-msg"/>
+			<key name="single-product-availability-outstock-msg"/>
+			<key name="product-bought-together-title"/>
+			<key name="product-fbt-button-text"/>
+			<key name="product-review-section-title"/>
+			<key name="delivery-return-label"/>
+			<key name="ask-quetion-label"/>
+			<key name="ask-quetion-form-title"/>
+			<key name="estimated-delivery-label"/>
+			<key name="visitor-count-text"/>
+			<key name="policy_title"/>
+			<key name="product-policies">
+				<key name="policy_title"></key>
+				<key name="policy_desc"></key>
+			</key>
+			<key name="trust-badge-label"/>
+			<key name="blog-page-title-text"/>
+			<key name="post-readmore-text"/>
+			<key name="blog-pagination-load-more-button-text"/>
+			<key name="blog-pagination-finished-message"/>
+			<key name="cookie-title"/>
+			<key name="cookie-message-text"/>
+			<key name="cookie-accept-text"/>
+			<key name="cookie-see-more-text"/>
+			<key name="cookie-refuse-text"/>			
+			<key name="theme-name"/>
+			<key name="theme-welcome-page-title"/>
+			<key name="theme-welcome-page-description"/>
+			<key name="sale-product-label-percentage-text"/>
+        </key>
+    </admin-texts>
+	<elementor-widgets>
+		<widget name="pls-accordion">
+			<fields-in-item items_of="tabs">
+				<field type="Accordion - Title" editor_type="LINE">tab_title</field>
+                <field type="Accordion - Content" editor_type="VISUAL">tab_content</field>
+			</fields-in-item>
+        </widget>		
+		<widget name="pls-banner">
+            <fields>
+                <field type="Banner - Title" editor_type="LINE">title</field>
+                <field type="Banner - Subtitle" editor_type="AREA">subtitle</field>
+                <field type="Banner - Description" editor_type="AREA">banner_content</field>
+                <field type="Banner - Button Text" editor_type="LINE">button_text</field>
+				<field type="Banner - Link" editor_type="LINK" key_of="banner_link">url</field>
+            </fields>
+        </widget>
+		<widget name="pls-banner-slider">
+			<fields-in-item items_of="banners">
+				<field type="Banner Carousel - Title" editor_type="LINE">title</field>
+                <field type="Banner Carousel - Subtitle" editor_type="AREA">subtitle</field>
+                <field type="Banner Carousel - Description" editor_type="AREA">banner_content</field>
+                <field type="Banner Carousel - Button Text" editor_type="LINE">button_text</field>
+				<field type="Banner Carousel - Link" editor_type="LINK" key_of="banner_link">url</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-before-after">
+            <fields>
+                <field type="Before - Text" editor_type="LINE">before_text</field>
+                <field type="After - Text" editor_type="LINE">after_text</field>
+            </fields>
+        </widget>
+		<widget name="pls-button">
+            <fields>
+                <field type="Button - Text" editor_type="LINE">text</field>
+                <field type="Button - Link" editor_type="LINK" key_of="button_link">url</field>
+            </fields>
+        </widget>
+		<widget name="pls-contact-info">
+            <fields>
+                <field type="Contact Info - Title" editor_type="LINE">title</field>
+                <field type="Contact Info - Tagline" editor_type="AREA">description</field>
+				<field type="Button - Link" editor_type="LINK" key_of="link">url</field>
+            </fields>
+			<fields-in-item items_of="info_items">
+				<field type="Contact Info Item - Title" editor_type="LINE">label</field>
+				<field type="Contact Info Item - Label" editor_type="LINE">text</field>
+			</fields-in-item>
+        </widget>		
+		<widget name="pls-contactus">
+            <fields>
+                <field type="Contactus - Title" editor_type="LINE">title</field>
+                <field type="Contactus - Description" editor_type="AREA">description</field>
+            </fields>
+        </widget>
+		<widget name="pls-countdown">
+            <fields>
+                <field type="Countdown - Days Label" editor_type="LINE">label_days</field>
+                <field type="Countdown - Hours Label" editor_type="LINE">label_hours</field>
+                <field type="Countdown - Minutes Label" editor_type="LINE">label_minutes</field>
+                <field type="Countdown - Seconds Label" editor_type="LINE">label_seconds</field>
+            </fields>
+        </widget>
+		<widget name="pls-heading">
+            <fields>
+				<field type="Heading - Title" editor_type="LINE">title</field>
+                <field type="Heading - Subtitle" editor_type="LINE">sub_title</field>
+                <field type="Heading - Tagline" editor_type="AREA">tagline</field>
+            </fields>
+        </widget>
+		<widget name="pls-home-slides">
+			<fields-in-item items_of="home_slides">
+				<field type="Banner Carousel - Title" editor_type="LINE">slide_title</field>
+                <field type="Banner Carousel - Subtitle" editor_type="AREA">slide_subtitle</field>
+                <field type="Banner Carousel - Description" editor_type="AREA">slide_description</field>
+                <field type="Banner Carousel - Button Text" editor_type="LINE">slide_button_text</field>
+				<field type="Banner Carousel - Link" editor_type="LINK" key_of="slide_button_link">url</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-hotspot">
+			<fields-in-item items_of="hotspot_items">
+				<field type="Hotspot - Content" editor_type="VISUAL">custom_content</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-infobox">
+            <fields>
+                <field type="Infobox - Subtitle" editor_type="LINE">subtitle</field>
+                <field type="Infobox - Title" editor_type="LINE">title_text</field>
+                <field type="Infobox - Description" editor_type="AREA">description</field>
+                <field type="Infobox - Link" editor_type="LINK" key_of="link">url</field>
+                <field type="Infobox - Read More Text" editor_type="LINE">read_more_text</field>
+            </fields>
+        </widget>
+		<widget name="pls-instagram">
+            <fields>
+                <field type="Instagram - Profile Name" editor_type="LINE">profile_name</field>
+                <field type="Instagram - Link" editor_type="LINK" key_of="profile_link">url</field>
+            </fields>
+        </widget>
+		<widget name="pls-marquee">
+            <fields-in-item items_of="marquee_items">
+				<field type="Marquee - Title" editor_type="LINE">title</field>
+				<field type="Marquee - Link" editor_type="LINK" key_of="link">url</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-menu-block">
+            <fields>
+                <field type="Mega Menu Item - Title" editor_type="LINE">title</field>
+                <field type="Mega Menu Item - Link" editor_type="LINK" key_of="link">url</field>
+				<field type="Mega Menu Item - Label" editor_type="LINE">label_text</field>
+            </fields>
+			<fields-in-item items_of="menu_items">
+				<field type="Sub Menu Item - Title" editor_type="LINE">title</field>
+                <field type="Sub Menu Item - Link" editor_type="LINK" key_of="link">url</field>
+				<field type="Sub Menu Item - Label" editor_type="LINE">label_text</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-tabs">
+			<fields-in-item items_of="tabs">
+				<field type="Tab - Title" editor_type="LINE">tab_title</field>
+                <field type="Tab - Content" editor_type="VISUAL">tab_content</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-team">            
+			<fields-in-item items_of="team_members">
+				<field type="Team - Name" editor_type="LINE">name</field>
+				<field type="Team - Designation" editor_type="LINE">designation</field>
+				<field type="Team - Facebook" editor_type="LINE">facebook</field>
+				<field type="Team - Twitter" editor_type="LINE">twitter</field>
+				<field type="Team - Linkedin" editor_type="LINE">linkedin</field>
+				<field type="Team - Skype" editor_type="LINE">skype</field>
+				<field type="Team - Instagram" editor_type="LINE">instagram</field>
+				<field type="Team - Youtube" editor_type="LINE">youtube</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-testimonials">            
+			<fields-in-item items_of="testimonials_items">				
+				<field type="Testimonials - Title" editor_type="LINE">title</field>
+				<field type="Testimonials - Name" editor_type="LINE">name</field>
+				<field type="Testimonials - Caption" editor_type="LINE">caption</field>				
+				<field type="Testimonials - Quote" editor_type="AREA">quote</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-text-slider">
+            <fields-in-item items_of="slider_texts">
+				<field type="Marquee - Title" editor_type="LINE">slider_text</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-video-tabs">
+			<fields-in-item items_of="tabs">
+				<field type="Video Tab - Title" editor_type="LINE">tab_title</field>
+				<field type="Video Tab - Link" editor_type="LINK" key_of="video_link">url</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-featured-products">
+            <fields>
+				<field type="Feature Products - Title" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+		<widget name="pls-product-brands">
+            <fields>
+				<field type="Products Brand - Title" editor_type="LINE">title</field>
+            </fields>
+			<fields-in-item items_of="custom_brand">
+				<field type="Custom Brand - Title" editor_type="LINE">title</field>
+				<field type="Custom Brand - Link" editor_type="LINK" key_of="link">url</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-product-bundle">
+            <fields>
+				<field type="Product Bundle - Title" editor_type="LINE">button_text</field>
+            </fields>
+        </widget>
+		<widget name="pls-product-categories">
+            <fields>
+				<field type="Product Categories - Title" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+		<widget name="pls-product-categories-thumbnail">
+            <fields>
+				<field type="Product Categories Thumbnail - Title" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+		<widget name="pls-custom-categories">
+			<fields-in-item items_of="category_list">
+				<field type="Product Custom Categories - Title" editor_type="LINE">cat_title</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-products-category-tabs">
+			<fields>
+				<field type="Products Category Tabs - Title" editor_type="LINE">title</field>
+				<field type="Product Categories Tabs - Banner Link" editor_type="LINK" key_of="banner_link">url</field>				
+            </fields>		
+			<fields-in-item items_of="product_tabs">
+				<field type="Products Category Tabs - Tab Title" editor_type="LINE">tab_title</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-products-grid-slider">
+            <fields>
+				<field type="Product Grid Slider - Title" editor_type="LINE">title</field>
+				<field type="Product Grid Slider - View More Button Text" editor_type="LINE">view_more_button_text</field>
+				<field type="Product Grid Slider - View More Button Link" editor_type="LINK" key_of="view_more_button_link">url</field>
+            </fields>
+        </widget>
+		<widget name="pls-products-hotdeal">
+            <fields>
+				<field type="Product Hotdeal - Title" editor_type="LINE">title</field>
+				<field type="Product Hotdeal - View More Button Text" editor_type="LINE">view_more_button_text</field>
+				<field type="Product Hotdeal - View More Button Link" editor_type="LINK" key_of="view_more_button_link">url</field>
+            </fields>
+        </widget>
+		<widget name="pls-products-recently-viewed">
+            <fields>
+				<field type="Product Recently Viewed - Title" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+		<widget name="pls-products-tabs">
+			<fields>
+				<field type="Products Category Tabs - Title" editor_type="LINE">title</field>
+            </fields>
+			<fields-in-item items_of="product_tabs">
+				<field type="Products Tabs - Tab Title" editor_type="LINE">tab_title</field>
+			</fields-in-item>
+        </widget>
+		<widget name="pls-products-widget">
+            <fields>
+                <field type="Products Widget - Title" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+		<widget name="pls-products-with-banner">
+            <fields>
+				<field type="Product With Banner - Title" editor_type="LINE">title</field>
+				<field type="Product With Banner - View More Button Text" editor_type="LINE">view_more_button_text</field>
+				<field type="Product With Banner - View More Button Link" editor_type="LINK" key_of="view_more_button_link">url</field>
+            </fields>
+        </widget>
+	</elementor-widgets>
+</wpml-config>
